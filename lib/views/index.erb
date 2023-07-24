@@ -4,15 +4,15 @@
   </head>
   <body>
     <h1>Bienvenue sur le comérage en follie !</h1>
-    <% gossips.each do |gossip| %>
-    <p>
+    <% gossips.each_with_index do |gossip, index| %>
+    <a href="/gossips/<%= index+1 %>" >
       <%= gossip.author %> , 
       <%= gossip.content %><br/>
-    </p>
+    </a>
     <% end %>
     <br/>
     <a href="/gossips/new/">Nouveau potin</a>
     <br/> <br/>
-    <a href="/gossip/view/">Lire un potin</a>
+    <a href="/gossips/view/">Lire un potin</a>
   </body>
 </html>

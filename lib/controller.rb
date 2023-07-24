@@ -15,12 +15,17 @@ class ApplicationController < Sinatra::Base
     redirect '/'
   end
   
-  get  '/gossip/view/' do
+  get  '/gossips/view/' do
     erb :get_gossip
   end
-  post '/gossip/view/' do
+  post '/gossips/view/' do
     index = params["gossip_number"].to_i
-    erb :show, locals: {gossip: Gossip.find(index), index: index}
+    redirect "/gossips/#{index}"
   end
   
+  get  '/gossips/:id' do
+    index = params["id"].to_i
+    erb :show, locals: {gossip: Gossip.find(index), index: index}
+  end
+
 end
