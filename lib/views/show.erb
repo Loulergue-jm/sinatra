@@ -3,16 +3,22 @@
     <title>The Gossip Project</title>
   </head>
   <body>
-    <h1>Bienvenue sur le comérage en follie !</h1>
+    <h1>PAGE POTIN !</h1>
     <h1> </h1>
-    <h1>Voici le comérage n°</h1>
-    <h1> </h1>
-    <% gossips[] do |gossip| %>
+		
+    <h1>Voici la page du potin n° <%= index %>
+		</h1>
+    <br/>
+    
     <p>
+      Son hauteur : 
       <%= gossip.author %><br/>
-      <%= gossip.content %>
+      Le contenu du potin : 
+      <%= gossip.content %><br/>
     </p>
-    <% end %>
+   
+   <br>
+   <a href="/">Revenir au début</a>
     
   </body>
 </html>
