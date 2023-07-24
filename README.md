@@ -1,3 +1,2 @@
-Bonjour, je me suis arreté au point 2.6.4 de la ressource
-
-La vue show du potin
+Bonjour, je me suis arreté au point 2.6.5 de la ressource
+2.6.5. Pour finir : le lien
