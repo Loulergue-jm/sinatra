@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>Bienvenue sur le comérage en follie !</h1>
+    <h1> </h1>
+    <h1>Voici le comérage n°</h1>
+    <h1> </h1>
+    <% gossips[] do |gossip| %>
+    <p>
+      <%= gossip.author %><br/>
+      <%= gossip.content %>
+    </p>
+    <% end %>
+    
+  </body>
+</html>
